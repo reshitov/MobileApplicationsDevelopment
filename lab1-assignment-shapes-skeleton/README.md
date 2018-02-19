@@ -1,9 +1,12 @@
 # ЛАБОРАТОРНАЯ РАБОТА №1
 
-**По дисциплине:** 	Разработка мобильных приложений.  
-**Тема занятия:** 	Введение в типы данных Java, переменные и методы класса.  
-**Цель занятия:** 	Знакомство с интегрированной средой разработки Android Studio и приобретение навыков работы по созданию методов класса с использованием различных типов данных переменных.  
-**Количество часов:** 	2.
+**По дисциплине:** 	Разработка мобильных приложений.
+
+**Тема занятия:** 	Введение в типы данных Java, переменные и методы класса.
+
+**Цель занятия:** 	Знакомство с интегрированной средой разработки Android Studio и приобретение навыков работы по созданию методов класса с использованием различных типов данных переменных.
+
+**Количество часов:** 	4.
 
 ## 1. Введение
 В этом задании Вы должны написать несколько методов, которые выполняют общие геометрические вычисления, такие как: вычисление площади круга, периметра прямоугольного треугольника, объема куба и др.
@@ -30,15 +33,24 @@
 
 Это только заголовки. Ваша задача – добавить каждый из этих методов, включая заголовок метода и тело метода, в файл Logic.java.
 
-> public static double rectangleArea(double length, double width)  
-> public static double rectanglePerimeter(double length, double width)  
-> public static double circleArea(double radius)  
-> public static double circleCircumference(double radius)  
-> public static double rightTriangleArea(double base, double height)  
-> public static double rightTrianglePerimeter(double base, double height)  
-> public static double boxVolume(double length, double width, double depth)  
-> public static double boxSurfaceArea(double length, double width, double depth)  
-> public static double sphereVolume(double radius)  
+> public static double rectangleArea(double length, double width)
+
+> public static double rectanglePerimeter(double length, double width)
+
+> public static double circleArea(double radius)
+
+> public static double circleCircumference(double radius)
+
+> public static double rightTriangleArea(double base, double height)
+
+> public static double rightTrianglePerimeter(double base, double height)
+
+> public static double boxVolume(double length, double width, double depth)
+
+> public static double boxSurfaceArea(double length, double width, double depth)
+
+> public static double sphereVolume(double radius)
+
 > public static double sphereSurfaceArea(double radius)
 
 Все методы должны быть помещены в файл Logic.java в классе Logic. Каждый метод должен принимать параметры, указанные выше, в указанном порядке. Рекомендуется просто скопировать-вставить указанные выше заголовки в свой файл. Затем методы должны выполнить необходимые вычисления и вернуть результаты вызывающему.
@@ -53,17 +65,17 @@
 * использование комментариев для объяснения фрагментов сложного кода;  
 * комментирование заголовков всех методов для объяснения того, что вычисляет метод, и любые предварительные или постусловия.
 
-##5. Порядок сдачи работы
+## 5. Порядок сдачи работы
 Выполненная лабораторная работа в виде проекта должна быть размещена на GitHub в вашем личном репозитории. Подробную инструкцию вы можете найти далее.
 
 
-#РУКОВОДСТВО ПО GIT
+# РУКОВОДСТВО ПО GIT
 В этом разделе очень коротко рассмотрим, как пользоваться Git – самой популярной, на сегодняшний день, системой контроля версий. Далее будет описано следующее:  
 * как зарегистрироваться на GitHub и сделать fork первого проекта;  
 * как работает Git;  
 * как выполнять основные действия из командной строки Git.
 
-##1. Причины использования систем контроля версий
+## 1. Причины использования систем контроля версий
 Если вы уже работали с системами контроля версий, вроде Git или Subversion, можете смело пропускать эту часть.
 
 Во время работы над проектом, его код постоянно эволюционирует: добавляются функции, проводятся улучшения кода или устраняются баги. Давайте рассмотрим простой сценарий: есть проект в котором необходимо реализовать некоторые изменения. Всегда существует риск, что изменения сломают часть уже работающего функционала, потому рассудительный программист сохранит стабильный код перед тем как его изменять. Самый простой способ это сделать – заархивировать папку с исходниками и записать дату в имени архива, чтобы было проще искать.
@@ -82,7 +94,7 @@
 
 Кроме указанных выше, у Git есть еще масса возможностей.
 
-##2. Регистрация на Github и первые шаги
+## 2. Регистрация на Github и первые шаги
 Github – это git-хостинг и социальная платформа, которая позволяет организовать совместную работу над проектом. Вы будете разрабатывать и хранить код лабораторных работ на github, потому первое что следует сделать – это завести там аккаунт и установить git-клиент (https://git-scm.com/downloads).
 
 Как только аккаунт создан – зайдите на https://github.com/abdurayimov/MobileApplicationsDevelopment. Это репозиторий с “шаблонами” лабораторных работ и дополнительнм материалом. В правом верхнем углу экрана есть кнопка   (fork). Нажмите ее, и github создаст вашу личную копию репозитория, с которой вы будете работать.
@@ -99,7 +111,7 @@ Github – это git-хостинг и социальная платформа,
 
 Следующий шаг – создать «клон» – локальную копию репозитория. Выполните команду:
 
-> git clone https://github.com/<user_name>/MobileApplicationsDevelopment
+> git clone [https://github.com/<user_name>/MobileApplicationsDevelopment](https://github.com/<user_name>/MobileApplicationsDevelopment)
 
 Вместо <user_name> подставьте имя своего github-аккаунта. После этого, зайдите в папку MobileApplicationsDevelopment, которую создал git.
 
@@ -109,11 +121,11 @@ Github – это git-хостинг и социальная платформа,
 
 Git выведет список измененных файлов и папок. Например, была создана папка src и в ней файл Main.java. После того, как выполнится команда git status, будет следующий результат:
 
-> # On branch master  
-> # Untracked files:  
-> #   (use "git add <file>..." to include in what will be committed)  
-> #  
-> #         src/  
+> \# On branch master  
+> \# Untracked files:  
+> \#   (use "git add <file>..." to include in what will be committed)  
+> \#  
+> \#         src/  
 > nothing added to commit but untracked files present (use "git add" to track)
 
 Git хранит версии проекта в виде набора «коммитов» – (от англ. commits). Коммит – это то состояние проекта, которое вы хотите «записать» для истории. Git не будет автоматически сохранять все измененные файлы. Для каждого коммита нужно указывать список изменений вручную. Чтобы сделать это, выполните:
@@ -126,10 +138,10 @@ Git хранит версии проекта в виде набора «комм
 
 Теперь, если выполнить git status снова, будет видно, что git готов сохранить изменения в src/Main.java:
 
-> # Changes to be committed:  
-> #   (use "git reset HEAD <file>..." to unstage)  
-> #  
-> #     new file:   src/Main.java
+> \# Changes to be committed:  
+> \#   (use "git reset HEAD <file>..." to unstage)  
+> \#  
+> \#     new file:   src/Main.java
 
 Следующий шаг – «записать» изменения. Или в терминах git – сделать коммит.
 
@@ -143,23 +155,28 @@ Git хранит версии проекта в виде набора «комм
 
 Про синтаксис команды поговорим немного позже. Сейчас просто скопируйте ее в консоль и нажмите Enter. В процессе вам потребуется ввести имя пользователя и пароль на github. Как только push выполнен, изменения доступны другим пользователям.
 
-##3. Базовые команды Git
+## 3. Базовые команды Git
 В этом разделе приведен минимальный список команд git, которые потребуются вам для работы над первой лабораторной работой.
 
-> git clone https://github.com/abdurayimov/MobileApplicationsDevelopment  
+> git clone https://github.com/abdurayimov/MobileApplicationsDevelopment
+
 создать «клон» – локальную рабочую копию репозитория
 
-> git status  
+> git status
+
 посмотреть текущее состояние проекта, список файлов, которые изменены, список файлов, которые добавлены к коммиту
 
-> git add src/Main.java  
+> git add src/Main.java
+
 добавить файл к коммиту
 
-> git commit -m "my comment"  
+> git commit -m "my comment"
+
 сохранить коммит
 
-> git push origin master  
+> git push origin master
+
 опубликовать изменения на github.
 
-##4. Дополнительные ресурсы
+## 4. Дополнительные ресурсы
 Git это очень мощная система и она «умеет» куда больше, чем было описано в этом коротком разделе. Больше про git можно узнать на сайте: http://git-scm.com/book.
