@@ -1,5 +1,6 @@
 package com.company.shapes.logic;
 
+import com.company.shapes.R;
 import com.company.shapes.ui.OutputInterface;
 
 /**
@@ -158,6 +159,73 @@ public class Logic
             default:
                 break;
         }
+    }
+
+    public static double rectangleArea(double length, double width){ //площадь прямоугольника
+        double S;
+        S=length*width;
+        return S;
+
+    }
+
+    public static double rectanglePerimeter(double length, double width){ //периметр прямоугольника
+        double P;
+        P=2*(length+width);
+        return P;
+    }
+
+    public static double circleArea(double radius){ // площадь круга
+        double SC;
+        double q=3.141592653589793;
+        SC=q*Math.pow(radius, 2.0);
+        return SC;
+
+    }
+    public static double circleCircumference(double radius){
+        double C;
+        double q=3.141592653589793;
+        C=2*q*radius;
+        return C;
+
+    }
+    public static double rightTriangleArea(double base, double height){
+        double S;
+        S=0.5*base*height;
+        return S;
+
+    }
+    public static double rightTrianglePerimeter(double base, double height)
+    {
+        double g;
+        double a;
+        double c;
+        g=Math.pow(base,2.0)+Math.pow(height,2.0);
+        a=Math.sqrt(g);
+        c=a+base+height;
+        return c;
+    }
+    public static double boxVolume(double length, double width, double depth){
+        double V;
+        V=length*width*depth;
+        return V;
+    }
+    public static double boxSurfaceArea(double length, double width, double depth){
+        double A=2*((depth*length)+(length*width)+(depth*width));
+        return A;
+
+    }
+    public static double sphereVolume(double radius){
+        double V;
+        double P=3.141592653589793;
+        V=4.0/3.0*P*Math.pow(radius,3.0);
+        return V;
+
+    }
+    public static double sphereSurfaceArea(double radius){
+        double S;
+        S=4.0*3.141592653589793*Math.pow(radius,2.0);
+        return S;
+
     }
 
     // TODO -- add your code here
